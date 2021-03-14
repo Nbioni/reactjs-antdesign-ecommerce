@@ -7,7 +7,6 @@ const { Meta } = Card;
 const Product = ({product, setFavorite}) => {
 
   const renderFavoriteIcon = (favoriteId) => {
-    console.log(favoriteId);
     if(favoriteId){
       return <Tooltip placement="top" title="Favorite"><HeartFilled/></Tooltip>
     }else{

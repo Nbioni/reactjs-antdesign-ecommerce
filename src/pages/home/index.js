@@ -48,13 +48,11 @@ const HomePage = ({logout, user}) => {
   const setFavorite = async (product) => {
     var response = await postFavorites(user.id, storeKey, product);
     if(product.favoriteId){
-      console.log("removeu favorito")
       setProducts(products.map(item => item === product ? {...item, favoriteId: undefined} : item));
       setSearchProducts(searchProducts.map(item => item === product ? {...item, favoriteId: undefined} : item));
     }else{
-      const productsAux = item => item === product ? {...item, favoriteId: response._id} : item;
-      setProducts(products.map(productsAux));
-      setSearchProducts(products);
+      setProducts(products.map(item => item === product ? {...item, favoriteId: response._id} : item));
+      setSearchProducts(searchProducts.map(item => item === product ? {...item, favoriteId: response._id} : item));
     }
   } 
   const changePage = (menuHeaderKey) => {

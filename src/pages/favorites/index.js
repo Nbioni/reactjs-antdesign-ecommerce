@@ -21,12 +21,10 @@ const FavoritesPage = ({user, setFavorite }) => {
     async function fetchData(){
       if(storeKey){
         const request = await getFavoritesByUserId(user.id, storeKey);
-        console.log(request)
         setFavorites(request);
         return request;
       }else{
         const request = await getFavorites();
-        console.log(request)
         setFavorites(request);
         return request;
       }
@@ -50,7 +48,6 @@ const FavoritesPage = ({user, setFavorite }) => {
   }
   const removeFavorite = async (product) => {
     const newFavorites = favorites.filter(item => item !== product);
-    console.log(newFavorites);
     setFavorites(newFavorites);
     await setFavorite(product);
   }
@@ -64,7 +61,7 @@ const FavoritesPage = ({user, setFavorite }) => {
           </Col>
           <Col span={16}>
             <p>Loja virtual com diversos produtos</p>
-            <IconText icon={HeartOutlined} text="156" key="list-vertical-star-o" />
+            <IconText icon={HeartOutlined} text={favorites.length} key="list-vertical-star-o" />
           </Col>
         </Row>
       </Card>

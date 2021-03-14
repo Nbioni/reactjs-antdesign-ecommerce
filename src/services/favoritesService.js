@@ -29,8 +29,6 @@ export async function getFavorites() {
 
 export async function getFavoritesByUserId(userId, storeKey) {
   const response = await getFavorites();
-  console.log(response);
-  console.log(userId);
   if(storeKey){
     return response.filter(favorites => favorites.idUser === userId && favorites.storeName == storeKey);
   }else{
