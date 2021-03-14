@@ -96,6 +96,21 @@ Execute o Projeto com o comando`npm start` ou `yarn start`
 
 O sitema irá abrir em `localhost` e você poderá criar uma conta, logar, favoritar um produto, pesquisar produtos, pesquisar por categorias e acompanhar sua lista de favoritos.
 
+##### LoginPage
+- Ao rodar o projeto você irá ver a seguinte tela:
+![image](https://user-images.githubusercontent.com/43020119/111056058-c1e70d00-845a-11eb-98d4-2d4243165742.png)
+
+- Clique em `register now` para abrir o formulário de registro, preencha e clique em `Register` para realizar o seu cadastro e então realizar o login
+![image](https://user-images.githubusercontent.com/43020119/111056105-476abd00-845b-11eb-8279-a245acba0f9a.png)
+
+- Ao logar você irá visualizar a tela do seu ecommerce com um cabeçalho contendo as páginas Home e Favoritos, uma mensagem de boas vindas e um botão para fazer o logout. 
+- Você irá visualizar à esquerda os campos de consulta, um input de busca, botões para escolher a loja(neste caso só tem uma mesmo) e uma lista de categorias. 
+- Você irá visualizar os produtos podendo clicar no icone de coração para favoritar um item;
+![image](https://user-images.githubusercontent.com/43020119/111056323-e9d77000-845c-11eb-9ccc-ccf7e593c62d.png)
+
+- Ao clicar na aba de Favoritos você irá encontrar a página contendo todos os seus favoritos, ao clicar no store você verifica todos os favoritos daquele store(só estamos utilizando um).
+![image](https://user-images.githubusercontent.com/43020119/111056393-73873d80-845d-11eb-8061-a8746054d3ec.png)
+
 
 
 
