@@ -1,0 +1,78 @@
+.site-card-border-less-wrapper {
+    padding: 30px;
+    background: #ececec;
+  }
+    [data-theme="dark"] .site-card-border-less-wrapper {
+      background: #303030;
+    }
+.login-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    float: left;
+    height: 64px;
+  }
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.welcome h2{
+    color: #12ac8e;
+}
+.welcome h2 span{
+    color: #42d67f;
+}
+.welcome button{
+    top: -2px;
+    margin-left: 8px;
+}
+.welcome button span{
+    color: #12ac8e;
+}
+.welcome button:hover {
+    transform: rotate(90deg);
+}
+
+.site-layout-background {
+    background: #fff;
+    padding-left: 25px;
+}
+
+.fakestore-btn{
+    background-color: #802c6e;    
+    padding: 10px;
+    color: white;
+}
+.fakestore-btn:hover{
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);
+    color: white;
+}
+.fakestore-btn image{
+    top: -2px;
+    position: relative;
+}
+.favorited-btn, .favorited-btn:hover, .favorite-btn:hover, 
+.favorited-btn:focus, .favorite-btn:focus,
+.favorited-btn:active, .favorite-btn:active{
+    color: #ef6a6a;
+    border-color: #ef6a6a;
+}
+
+.Mycolors{
+    color: #12ac8e;
+    color: #52e0dc;
+    color: #71ff71;
+    color: #42d67f;
+    color: #c5ff4a;
+    color: #6bd66c;
+    font-family: 'Gotham Round';
+}
